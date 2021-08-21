@@ -150,14 +150,5 @@ pipeline {
 		      bat "kubectl apply -f deployment.yaml"
 		  }
 		}
-   	 }
-
-
-	post { 
-			always { 
-				echo 'Workspace Cleanup'
-				cleanWs()
-			}
-		}
-	 
+   	 }	 
 }
