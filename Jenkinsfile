@@ -15,9 +15,6 @@ pipeline {
 		//Set a timeout period for the Pipeline run, after which Jenkins should abort the Pipeline
 		timeout(time: 1, unit: 'HOURS') 
 		
-		//Skip checking out code from source control by default in the agent directive
-		skipDefaultCheckout()
-		
 		buildDiscarder(logRotator(
 			// number of build logs to keep
             numToKeepStr:'3',
