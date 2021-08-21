@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dotnet-app-deployment
-  namespace: dotnet-app-ns
+  namespace: kubernetes-cluster-rajivgogia
   labels:
     app: dotnet-app
 spec:
