@@ -304,14 +304,14 @@ D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi-tests\obj\D
 D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi-tests\obj\Debug\netcoreapp3.1\ProductManagementApi-tests.dll
 D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi-tests\obj\Debug\netcoreapp3.1\ProductManagementApi-tests.pdb
 D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi-tests\obj\Debug\netcoreapp3.1\ProductManagementApi-tests.genruntimeconfig.cache
-D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
-D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
-D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\nunit.engine.dll
-D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\ProductManagementApi.exe
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\nunit.engine.dll
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\ProductManagementApi-tests.deps.json
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\ProductManagementApi-tests.runtimeconfig.json
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\ProductManagementApi-tests.runtimeconfig.dev.json
@@ -401,9 +401,8 @@ D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\obj\Debug\netcoreapp3.1\ProductManagementApi-tests.csprojAssemblyReference.cache
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\obj\Debug\netcoreapp3.1\ProductManagementApi-tests.AssemblyInfoInputs.cache
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\obj\Debug\netcoreapp3.1\ProductManagementApi-tests.AssemblyInfo.cs
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\obj\Debug\netcoreapp3.1\ProductManagementApi-tests.csproj.CoreCompileInputs.cache
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\obj\Debug\netcoreapp3.1\ProductManagementApi-tests.csproj.CopyComplete
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\obj\Debug\netcoreapp3.1\ProductManagementApi-tests.dll
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\obj\Debug\netcoreapp3.1\ProductManagementApi-tests.pdb
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\obj\Debug\netcoreapp3.1\ProductManagementApi-tests.genruntimeconfig.cache
-D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\bin\Debug\netcoreapp3.1\CoverletSourceRootsMapping
-D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi-tests\obj\Debug\netcoreapp3.1\ProductManagementApi-tests.csproj.CoreCompileInputs.cache

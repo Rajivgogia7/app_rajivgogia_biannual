@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6NOP267paT8l1/jca8RWp/67b1XMFiBoBei8QKxTMNuf0L9wDHj5wTOMICD2jKCvIAPRR4yOYn3kPT8YYzsDBA==",
+  "dgSpecHash": "ty4bALgpJQeAAm3Wqh9W4gl56eiw6MaJvIYyWjyRFlHhcqMNPlXApU5iDVdgUmGiR+qyqQ6iMllRPPaXd6WN7w==",
   "success": true,
   "projectFilePath": "D:\\Documents\\GitHub_Projects\\app_rajivgogia\\ProductManagementApi-tests\\ProductManagementApi-tests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\rajivgogia\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\rajivgogia\\.nuget\\packages\\coverlet.msbuild\\3.1.0\\coverlet.msbuild.3.1.0.nupkg.sha512",
     "C:\\Users\\rajivgogia\\.nuget\\packages\\microsoft.codecoverage\\16.4.0\\microsoft.codecoverage.16.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

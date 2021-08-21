@@ -64,6 +64,7 @@ D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\bin\Debug\netco
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.runtimeconfig.dev.json
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.dll
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.pdb
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.csprojAssemblyReference.cache
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.AssemblyInfoInputs.cache
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.AssemblyInfo.cs
 D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.csproj.CoreCompileInputs.cache
