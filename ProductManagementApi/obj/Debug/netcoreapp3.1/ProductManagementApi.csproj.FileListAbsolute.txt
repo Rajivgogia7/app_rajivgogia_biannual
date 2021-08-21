@@ -1,0 +1,76 @@
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.exe
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.deps.json
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.runtimeconfig.json
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.runtimeconfig.dev.json
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.dll
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.pdb
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.AssemblyInfoInputs.cache
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.AssemblyInfo.cs
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.csproj.CoreCompileInputs.cache
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.RazorTargetAssemblyInfo.cache
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\staticwebassets\ProductManagementApi.StaticWebAssets.Manifest.cache
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\staticwebassets\ProductManagementApi.StaticWebAssets.xml
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.dll
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.pdb
+D:\Study\NAGP\2. Devops\GithubProjects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.genruntimeconfig.cache
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.exe
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.deps.json
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.runtimeconfig.json
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.runtimeconfig.dev.json
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.dll
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.pdb
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.AssemblyInfoInputs.cache
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.AssemblyInfo.cs
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.csproj.CoreCompileInputs.cache
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.RazorTargetAssemblyInfo.cache
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\staticwebassets\ProductManagementApi.StaticWebAssets.Manifest.cache
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\staticwebassets\ProductManagementApi.StaticWebAssets.xml
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.dll
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.pdb
+D:\Documents\Nagp\Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.genruntimeconfig.cache
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.exe
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.deps.json
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.runtimeconfig.json
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.runtimeconfig.dev.json
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.dll
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.pdb
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.AssemblyInfoInputs.cache
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.AssemblyInfo.cs
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.csproj.CoreCompileInputs.cache
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.RazorTargetAssemblyInfo.cache
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\staticwebassets\ProductManagementApi.StaticWebAssets.Manifest.cache
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\staticwebassets\ProductManagementApi.StaticWebAssets.xml
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.dll
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.pdb
+D:\Study\Nagp\2. Devops\Projects\TestJenkinsApi\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.genruntimeconfig.cache
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.exe
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.deps.json
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.runtimeconfig.json
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.runtimeconfig.dev.json
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.dll
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\bin\Debug\netcoreapp3.1\ProductManagementApi.pdb
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.AssemblyInfoInputs.cache
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.AssemblyInfo.cs
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.RazorTargetAssemblyInfo.cache
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\obj\Debug\netcoreapp3.1\staticwebassets\ProductManagementApi.StaticWebAssets.Manifest.cache
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\obj\Debug\netcoreapp3.1\staticwebassets\ProductManagementApi.StaticWebAssets.xml
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.dll
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.pdb
+D:\Documents\GitHub_Projects\app_rajivgogia\ProductManagementApi\obj\Debug\netcoreapp3.1\ProductManagementApi.genruntimeconfig.cache
