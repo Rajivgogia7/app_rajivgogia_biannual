@@ -49,10 +49,10 @@ pipeline {
                    bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll begin /k:sonar-${userName}-bi-annual /n:sonar-${userName}-bi-annual /v:1.0"
                   }
 
-                  sleep 10
-                  timeout(time: 30, unit: 'SECONDS') {
-                    waitForQualityGate abortPipeline: true
-                  }
+                  //sleep 10
+                  //timeout(time: 30, unit: 'SECONDS') {
+                    //waitForQualityGate abortPipeline: true
+                  //}
             }
         }
 
