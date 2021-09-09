@@ -74,14 +74,21 @@ pipeline {
             }
         }
 
-        stage('Unit test') {
+         stage('Unit test') {
             steps {
-                  echo "Unit test"
-                  bat "dotnet test ProductManagementApi-tests\\ProductManagementApi-tests.csproj -l:trx;LogFileName=ProductManagementApiTestOutput.xml"
+                bat 'dotnet test ProductManagementApi-tests\\ProductManagementApi-tests.csproj -l:trx;logFileName=TestResults.xml'
+            }
+            post {
+                always {
+                    xunit(
+                    thresholds: [skipped(failureThreshold: '0'), failed(failureThreshold: '0')],
+                    tools: [MSTest(pattern: 'ProductManagementApi-tests/TestResults/TestResults.xml')]
+                    )
+                }
             }
         }
 
-       	stage('Stop sonarqube analysis'){
+      	stage('Stop sonarqube analysis'){
 			steps {
 				   echo "Stop sonarqube analysis"
                    withSonarQubeEnv('Test_Sonar') {
