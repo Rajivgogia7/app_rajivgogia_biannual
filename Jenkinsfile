@@ -64,13 +64,6 @@ pipeline {
 				  //Builds the project and all of its dependencies
                   echo "Code Build"
                   bat 'dotnet build -c Release -o "ProductManagementApi/app/build"'	
-
-                  sleep 10
-                  withSonarQubeEnv('Test_Sonar') {
-                        timeout(time: 60, unit: 'SECONDS') {
-                        waitForQualityGate abortPipeline: true
-                        }
-                  }
             }
         }
 
