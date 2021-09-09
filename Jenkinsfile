@@ -25,6 +25,15 @@ pipeline {
     
     stages {
         
+        stage('Checkout from GitHub'){
+            steps{
+                     checkout([   $class: 'GitSCM',
+                     branches: [[name: '*/feature']],
+                     userRemoteConfigs: [[credentialsId: 'GitCreds', url: 'https://github.com/Rajivgogia7/app_rajivgogia_biannual']]
+                    ])
+            }
+        }
+
     	stage ("nuget restore") {
             steps {
 		    
@@ -35,16 +44,12 @@ pipeline {
                 bat "dotnet restore"
             }
         }
-		
-		stage('Start sonarqube analysis'){
-            when {
-                branch "master"
-            }
-
+                  
+      	stage('Start sonarqube analysis'){
             steps {
 				  echo "Start sonarqube analysis step"
                   withSonarQubeEnv('Test_Sonar') {
-                   bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll begin /k:sonar-${userName} /n:sonar-${userName} /v:1.0"
+                   bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll begin /k:sonar-${userName}-bi-annual /n:sonar-${userName}-bi-annual /v:1.0"
                   }
             }
         }
@@ -58,15 +63,18 @@ pipeline {
 				  //Builds the project and all of its dependencies
                   echo "Code Build"
                   bat 'dotnet build -c Release -o "ProductManagementApi/app/build"'	
-                  bat 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover -l:trx;LogFileName=ProductManagementApi.xml'	      
+                  //bat 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover -l:trx;LogFileName=ProductManagementApi.xml'	      
             }
         }
 
-		stage('Stop sonarqube analysis'){
-             when {
-                branch "master"
+        stage('Unit Test') {
+            steps {
+                  echo "Unit Testing Step"
+                  bat "dotnet test ProductManagementApi-tests\\ProductManagementApi-tests.csproj -l:trx;LogFileName=ProductManagementApiTestOutput.xml"
             }
-            
+        }
+
+       	stage('Stop sonarqube analysis'){
 			steps {
 				   echo "Stop sonarqube analysis"
                    withSonarQubeEnv('Test_Sonar') {
@@ -76,10 +84,6 @@ pipeline {
         }
 
         stage ("Release artifact") {
-            when {
-                branch "develop"
-            }
-
             steps {
                 echo "Release artifact step"
                 bat "dotnet publish -c Release -o ${appName}/app/${userName}"
@@ -88,12 +92,6 @@ pipeline {
 
         stage ("Docker Image") {
             steps {
-                //For master branch, publish before creating docker image
-                script {
-                    if (BRANCH_NAME == "master") {
-                        bat "dotnet publish -c Release -o ${appName}/app/${userName}"
-                    }
-                }
                 echo "Docker Image step"
                 bat "docker build -t i-${userName}-${BRANCH_NAME}:${BUILD_NUMBER} --no-cache -f Dockerfile ."
             }
@@ -107,12 +105,8 @@ pipeline {
                         echo "PrecontainerCheck step"
                         script {
 						
-							if (env.BRANCH_NAME == 'master') {
-                                env.port = 7200
-                            } else {
-                                env.port = 7300
-                            }
-						
+                            env.port = 7400
+				
 							env.containerId = bat(script: "docker ps -a -f publish=${port} -q", returnStdout: true).trim().readLines().drop(1).join('')
                             if (env.containerId != '') {
                                 echo "Stopping and removing container running on ${port}"
@@ -144,12 +138,7 @@ pipeline {
                 bat "docker run --name c-${userName}-${BRANCH_NAME} -d -p ${port}:80 ${registry}:i-${userName}-${BRANCH_NAME}-latest"
             }
         }
-
-         stage('Kubernetes Deployment') {
-		  steps{
-		      bat "kubectl apply -f deployment.yaml"
-		  }
-		}
+      
    	 }
 
 	 post { 
@@ -157,5 +146,5 @@ pipeline {
 				echo 'Workspace Cleanup'
 				cleanWs()
 			}
-		}
+	}
 }
