@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dotnet-app-deployment-master
+  name: dotnet-app-deployment-feature
   namespace: kubernetes-cluster-rajivgogia
   labels:
-    app: dotnet-app-master
+    app: dotnet-app-feature
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
-      app: dotnet-app-master
+      app: dotnet-app-feature
   template:
     metadata:
       labels:
-        app: dotnet-app-master
+        app: dotnet-app-feature
     spec:
       containers:
-        - name: dotnet-app-master
-          image: rajivgogia/productmanagementapi:i-rajivgogia-master-latest
+        - name: dotnet-app-feature
+          image: rajivgogia/productmanagementapi:i-rajivgogia-feature-latest
           ports:
             - name: http
               containerPort: 80
@@ -26,14 +26,25 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: dotnet-app-master
+  name: dotnet-app-feature
   namespace: kubernetes-cluster-rajivgogia
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector: 
-    app: dotnet-app-master
+    app: dotnet-app-feature
   ports:    
   - protocol: TCP
-    nodePort: 30157
     port: 80
     targetPort: 80
+---
+apiVersion: "v1"
+kind: "ConfigMap"
+metadata:
+  name: "app-settings"
+  namespace: kubernetes-cluster-rajivgogia
+  labels:
+    app: "app-settings"
+data:
+  API_URL: "http://google.com"
+  ENVIRONMENT: "dev"
+  LANGUAGE: "English"

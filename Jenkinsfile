@@ -48,6 +48,11 @@ pipeline {
                   withSonarQubeEnv('Test_Sonar') {
                    bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll begin /k:sonar-${userName}-bi-annual /n:sonar-${userName}-bi-annual /v:1.0"
                   }
+
+                  sleep 10
+                  timeout(time: 30, unit: 'SECONDS') {
+                    waitForQualityGate abortPipeline: true
+                  }
             }
         }
 
@@ -60,13 +65,12 @@ pipeline {
 				  //Builds the project and all of its dependencies
                   echo "Code Build"
                   bat 'dotnet build -c Release -o "ProductManagementApi/app/build"'	
-                  //bat 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover -l:trx;LogFileName=ProductManagementApi.xml'	      
             }
         }
 
         stage('Unit test') {
             steps {
-                  echo "Unit Testing Step"
+                  echo "Unit test"
                   bat "dotnet test ProductManagementApi-tests\\ProductManagementApi-tests.csproj -l:trx;LogFileName=ProductManagementApiTestOutput.xml"
             }
         }
@@ -129,10 +133,21 @@ pipeline {
             }
         }
 
-        stage ("Docker deployment") {
-            steps {
-                echo "Docker deployment step"
-                bat "docker run --name c-${userName}-${branchName} -d -p ${port}:80 ${registry}:i-${userName}-${branchName}-latest"
+        stage ("Deployment") {
+            failFast true
+            parallel {
+                stage ("Docker deployment") {
+                    steps {
+                        echo "Docker deployment step"
+                        bat "docker run --name c-${userName}-${branchName} -d -p ${port}:80 ${registry}:i-${userName}-${branchName}-latest"
+                    }
+                }
+
+                stage('Kubernetes Deployment') {
+                    steps{
+                        bat "kubectl apply -f deployment.yaml"
+                    }
+                }
             }
         }
    	 }
