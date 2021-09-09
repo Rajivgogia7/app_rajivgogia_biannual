@@ -66,8 +66,10 @@ pipeline {
                   bat 'dotnet build -c Release -o "ProductManagementApi/app/build"'	
 
                   sleep 10
-                  timeout(time: 60, unit: 'SECONDS') {
-                    waitForQualityGate abortPipeline: true
+                  withSonarQubeEnv('Test_Sonar') {
+                        timeout(time: 60, unit: 'SECONDS') {
+                        waitForQualityGate abortPipeline: true
+                        }
                   }
             }
         }
