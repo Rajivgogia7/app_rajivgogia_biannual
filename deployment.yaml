@@ -23,7 +23,7 @@ spec:
               containerPort: 80
               protocol: TCP
           envFrom:
-            - configMapRef:
+          - configMapRef:
               name: app-settings
 ---
 apiVersion: v1
