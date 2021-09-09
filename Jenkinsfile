@@ -6,6 +6,7 @@ pipeline {
 		registry = 'rajivgogia/productmanagementapi'
 		username = 'rajivgogia'
         appName = 'ProductManagementApi'
+        branchName = 'feature'
    	}	
    
 	options {
@@ -27,20 +28,16 @@ pipeline {
         
         stage('Checkout from GitHub'){
             steps{
-                     checkout([   $class: 'GitSCM',
-                     branches: [[name: '*/feature']],
-                     userRemoteConfigs: [[credentialsId: 'GitCreds', url: 'https://github.com/Rajivgogia7/app_rajivgogia_biannual']]
-                    ])
+               checkout([   $class: 'GitSCM',
+               branches: [[name: '*/feature']],
+               userRemoteConfigs: [[credentialsId: 'GitCreds', url: 'https://github.com/Rajivgogia7/app_rajivgogia_biannual']]
+               ])
             }
         }
 
-    	stage ("nuget restore") {
+    	stage ("Nuget restore") {
             steps {
-		    
-                //Initial message
-                echo "Deployment pipeline started for - ${BRANCH_NAME} branch"
-
-                echo "Nuget Restore step"
+                echo "Nuget restore step"
                 bat "dotnet restore"
             }
         }
@@ -67,7 +64,7 @@ pipeline {
             }
         }
 
-        stage('Unit Test') {
+        stage('Unit test') {
             steps {
                   echo "Unit Testing Step"
                   bat "dotnet test ProductManagementApi-tests\\ProductManagementApi-tests.csproj -l:trx;LogFileName=ProductManagementApiTestOutput.xml"
@@ -93,7 +90,7 @@ pipeline {
         stage ("Docker Image") {
             steps {
                 echo "Docker Image step"
-                bat "docker build -t i-${userName}-${BRANCH_NAME}:${BUILD_NUMBER} --no-cache -f Dockerfile ."
+                bat "docker build -t i-${userName}-${branchName}:${BUILD_NUMBER} --no-cache -f Dockerfile ."
             }
         }
 
@@ -122,11 +119,11 @@ pipeline {
                 stage ("PushtoDTR") {
                     steps {
                         echo "PushtoDTR step"
-                         bat "docker tag i-${userName}-${BRANCH_NAME}:${BUILD_NUMBER} ${registry}:i-${userName}-${BRANCH_NAME}-${BUILD_NUMBER}"
-                         bat "docker tag i-${userName}-${BRANCH_NAME}:${BUILD_NUMBER} ${registry}:i-${userName}-${BRANCH_NAME}-latest"
+                         bat "docker tag i-${userName}-${branchName}:${BUILD_NUMBER} ${registry}:i-${userName}-${branchName}-${BUILD_NUMBER}"
+                         bat "docker tag i-${userName}-${branchName}:${BUILD_NUMBER} ${registry}:i-${userName}-${branchName}-latest"
 
-                        bat "docker push ${registry}:i-${userName}-${BRANCH_NAME}-${BUILD_NUMBER}"
-                        bat "docker push ${registry}:i-${userName}-${BRANCH_NAME}-latest"
+                        bat "docker push ${registry}:i-${userName}-${branchName}-${BUILD_NUMBER}"
+                        bat "docker push ${registry}:i-${userName}-${branchName}-latest"
                     }
                 }
             }
@@ -135,10 +132,9 @@ pipeline {
         stage ("Docker deployment") {
             steps {
                 echo "Docker deployment step"
-                bat "docker run --name c-${userName}-${BRANCH_NAME} -d -p ${port}:80 ${registry}:i-${userName}-${BRANCH_NAME}-latest"
+                bat "docker run --name c-${userName}-${branchName} -d -p ${port}:80 ${registry}:i-${userName}-${branchName}-latest"
             }
         }
-      
    	 }
 
 	 post { 
