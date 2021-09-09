@@ -7,6 +7,7 @@ pipeline {
 		username = 'rajivgogia'
         appName = 'ProductManagementApi'
         branchName = 'feature'
+        port = 7400
    	}	
    
 	options {
@@ -51,11 +52,6 @@ pipeline {
                   withSonarQubeEnv('Test_Sonar') {
                    bat "dotnet ${scannerHome}\\SonarScanner.MSBuild.dll begin /k:sonar-${userName}-bi-annual /n:sonar-${userName}-bi-annual /v:1.0"
                   }
-
-                  //sleep 10
-                  //timeout(time: 30, unit: 'SECONDS') {
-                    //waitForQualityGate abortPipeline: true
-                  //}
             }
         }
 
@@ -68,6 +64,11 @@ pipeline {
 				  //Builds the project and all of its dependencies
                   echo "Code Build"
                   bat 'dotnet build -c Release -o "ProductManagementApi/app/build"'	
+
+                  sleep 10
+                  timeout(time: 60, unit: 'SECONDS') {
+                    waitForQualityGate abortPipeline: true
+                  }
             }
         }
 
@@ -109,8 +110,6 @@ pipeline {
                         echo "PrecontainerCheck step"
                         script {
 						
-                            env.port = 7400
-				
 							env.containerId = bat(script: "docker ps -a -f publish=${port} -q", returnStdout: true).trim().readLines().drop(1).join('')
                             if (env.containerId != '') {
                                 echo "Stopping and removing container running on ${port}"

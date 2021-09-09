@@ -45,6 +45,6 @@ metadata:
   labels:
     app: "app-settings"
 data:
-  API_URL: "http://google.com"
+  API_URL: "http://www.google.com"
   ENVIRONMENT: "dev"
   LANGUAGE: "English"
