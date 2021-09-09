@@ -26,6 +26,8 @@ pipeline {
             // history to keep in days
             daysToKeepStr: '15'
 			))
+
+         parallelsAlwaysFailFast()
     }
     
     stages {
@@ -105,7 +107,6 @@ pipeline {
         }
 
         stage ("Containers") {
-            failFast true
             parallel {
                 stage ("PrecontainerCheck") {
                     steps {
@@ -138,7 +139,6 @@ pipeline {
         }
 
         stage ("Deployment") {
-            failFast true
             parallel {
                 stage ("Docker deployment") {
                     steps {
