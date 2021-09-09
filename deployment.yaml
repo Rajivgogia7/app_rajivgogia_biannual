@@ -22,6 +22,9 @@ spec:
             - name: http
               containerPort: 80
               protocol: TCP
+          envFrom:
+            - configMapRef:
+              name: app-settings
 ---
 apiVersion: v1
 kind: Service
